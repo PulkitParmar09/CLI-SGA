@@ -1,0 +1,128 @@
+1. System Uptime Verification
+
+Command:
+
+uptime
+
+Explanation:
+
+uptime shows how long the system has been running since last boot.
+
+Also displays current time, number of users, and system load averages.
+
+2. User Process Listing
+
+Command:
+
+ps -u $USER
+
+
+Explanation:
+
+ps -u $USER lists all processes owned by your user account.
+
+Columns show PID, terminal, CPU time used, and command name.
+
+3. CPU Usage Analysis
+
+Command:
+
+ps -u $USER --sort=-%cpu | head -n 2
+
+
+Explanation:
+
+Sorts your processes by CPU usage in descending order.
+
+head -n 2 displays the header and the top CPU-consuming process.
+
+4. Background Process Execution
+
+Command:
+
+sleep 300 &
+jobs
+
+
+Explanation:
+
+sleep 300 & runs a command in the background.
+
+jobs lists all background jobs and their status.
+
+5. Process Priority Management
+
+Command:
+
+renice +5 -p 424
+ps -o pid,ni,cmd -p 424
+
+
+
+Explanation:
+
+renice +5 -p 424 increases niceness of process 424, lowering its priority.
+
+ps -o pid,ni,cmd -p 424 confirms the updated priority (NI column).
+
+6. Memory Usage Monitoring
+
+Command:
+
+free -h
+
+Explanation:
+
+free -h displays memory usage in human-readable format.
+
+Shows total, used, free memory, and swap space.
+
+
+7. Disk Space Inspection
+
+Command:
+
+df -h ~
+
+Explanation:
+
+df -h ~ shows disk usage of the filesystem containing your home directory.
+
+-h displays sizes in GB/MB for readability.
+
+
+8. Shell Identification
+
+Command:
+
+echo $SHELL
+
+Explanation:
+
+Displays the shell currently in use via the $SHELL environment variable.
+
+
+9. Output Redirection
+
+Command:
+
+uname -a > system_report.txt
+
+Explanation:
+
+Redirects the output of uname -a (system info) into a file.
+
+> overwrites the file if it exists.
+
+
+10. Disk Usage Visualization
+
+Command:
+
+du -h --max-depth=1 ~
+
+Explanation:
+
+du -h --max-depth=1 ~ shows disk usage for folders inside home directory.
+
+--max-depth=1 prevents listing all subfolders; shows only top-level folders.

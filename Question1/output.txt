@@ -1,0 +1,36 @@
+pulkit@FutureBrat:~/CLI-SGA/Question1$ groups
+pulkit adm dialout cdrom floppy sudo audio dip video plugdev users netdev
+pulkit@FutureBrat:~/CLI-SGA/Question1$ pwd
+/home/pulkit/CLI-SGA/Question1
+pulkit@FutureBrat:~/CLI-SGA/Question1$ ls -l
+total 12
+-rw-r--r-- 1 pulkit pulkit   38 Jan  5 16:40 log.txt
+drwxr-xr-x 2 pulkit pulkit 4096 Jan  5 16:38 screenshots
+-rw-r--r-- 1 pulkit pulkit   32 Jan  5 16:39 user_info.txt
+pulkit@FutureBrat:~/CLI-SGA/Question1$ echo "Linux user environment verified" > user_info.txt
+pulkit@FutureBrat:~/CLI-SGA/Question1$ cat user_info.txt
+Linux user environment verified
+pulkit@FutureBrat:~/CLI-SGA/Question1$ wc -c user_info.txt
+32 user_info.txt
+pulkit@FutureBrat:~/CLI-SGA/Question1$ man mkdir
+pulkit@FutureBrat:~/CLI-SGA/Question1$ ls ~
+CLI-SGA
+pulkit@FutureBrat:~/CLI-SGA/Question1$ echo "admin logged in" > log.txt
+pulkit@FutureBrat:~/CLI-SGA/Question1$ echo "normal user logged in" >> log.txt
+pulkit@FutureBrat:~/CLI-SGA/Question1$ grep "admin" log.txt
+admin logged in
+pulkit@FutureBrat:~/CLI-SGA/Question1$ uname -r
+5.15.153.1-microsoft-standard-WSL2
+pulkit@FutureBrat:~/CLI-SGA/Question1$ ping -c 4 www.google.com
+PING www.google.com (142.250.195.36) 56(84) bytes of data.
+64 bytes from lcboma-ax-in-f4.1e100.net (142.250.195.36): icmp_seq=1 ttl=115 time=34.5 ms
+64 bytes from lcboma-ax-in-f4.1e100.net (142.250.195.36): icmp_seq=2 ttl=115 time=34.7 ms
+64 bytes from lcboma-ax-in-f4.1e100.net (142.250.195.36): icmp_seq=3 ttl=115 time=33.2 ms
+64 bytes from lcboma-ax-in-f4.1e100.net (142.250.195.36): icmp_seq=4 ttl=115 time=33.1 ms
+
+--- www.google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3218ms
+rtt min/avg/max/mdev = 33.097/33.872/34.739/0.748 ms
+pulkit@FutureBrat:~/CLI-SGA/Question1$ uptime
+ 16:42:25 up  2:19,  1 user,  load average: 0.01, 0.01, 0.00
+pulkit@FutureBrat:~/CLI-SGA/Question1$

@@ -1,0 +1,21 @@
+pulkit@FutureBrat:~/CLI-SGA$ cd Question2
+pulkit@FutureBrat:~/CLI-SGA/Question2$ mkdir ~/documents
+pulkit@FutureBrat:~/CLI-SGA/Question2$ cd ~/documents
+pulkit@FutureBrat:~/documents$ touch plan.txt
+pulkit@FutureBrat:~/documents$ echo "Project notes" > plan.txt
+pulkit@FutureBrat:~/documents$ ls -l plan.txt
+-rw-r--r-- 1 pulkit pulkit 14 Jan  5 16:51 plan.txt
+pulkit@FutureBrat:~/documents$ cp plan.txt plan_copy.txt
+pulkit@FutureBrat:~/documents$ cd ~
+pulkit@FutureBrat:~$ mv documents project_documents
+pulkit@FutureBrat:~$ mkdir project_documents/archive
+pulkit@FutureBrat:~$ mv project_documents/plan_copy.txt project_documents/archive/
+pulkit@FutureBrat:~$ ls -R project_documents
+project_documents:
+archive  plan.txt
+
+project_documents/archive:
+plan_copy.txt
+pulkit@FutureBrat:~$ realpath project_documents/archive/plan_copy.txt
+/home/pulkit/project_documents/archive/plan_copy.txt
+pulkit@FutureBrat:~$

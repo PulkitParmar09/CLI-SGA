@@ -1,0 +1,45 @@
+
+1 : Create a directory named documents to store project files inside CLI-SGA/Question2
+
+mkdir documents - creates a new folder named documents.
+
+cd documents - navigates into the documents folder.
+
+2 : Create a file plan.txt
+
+touch plan.txt - creates an empty file called plan.txt.
+
+3:Write sample text into plan.txt
+
+echo "text" > file writes the given text into the file (overwrites if already exists).
+
+4:Check permissions and ownership
+
+ls -l lists detailed info: permissions, owner, group, size, modification date.
+
+diksh is the file owner and group.
+
+
+5:Copy plan.txt to plan_copy.txt
+
+cp plan.txt plan_copy.txt - copies the file.
+
+6:Rename documents to project_documents
+
+mv old_name new_name renames the folder
+
+7:Create a subdirectory archive
+
+mkdir archive - creates a subdirectory called archive.
+
+8: Move plan_copy.txt into archive
+
+mv plan_copy.txt archive/ - moves the file into the specified folder.
+
+9: List contents recursively
+
+ls -R - lists all files and subdirectories recursively.
+
+10 :Display absolute path of plan_copy.txt
+
+realpath - prints the absolute path of a file.

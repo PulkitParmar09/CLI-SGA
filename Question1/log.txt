@@ -1,0 +1,2 @@
+admin logged in
+normal user logged in
